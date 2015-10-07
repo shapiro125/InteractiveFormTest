@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Interactive Flowchart Demo</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <form class="controls" id="Filters">
+  <!-- We can add an unlimited number of "filter groups" using the following format: -->
+  
+  <fieldset>
+    <h4>What's your objective?</h4>
+    <button class="filter" data-filter=".awareness">Awareness</button>
+    <button class="filter" data-filter=".preference">Preference</button>
+    <button class="filter" data-filter=".trigger">Trigger</button>
+  </fieldset>
+  
+  <fieldset>
+    <h4>What audience do you want to target?</h4>
+    
+    <button class="filter" data-filter=".broad">Broad</button>
+    <button class="filter" data-filter=".specific">Specific</button>
+  </fieldset>
+   
+    <fieldset>
+    <h4>Budget available?</h4>
+    
+    <button class="filter" data-filter=".big">Big</button>
+    <button class="filter" data-filter=".modest">Modest</button>
+  </fieldset>
+  
+  <button id="Reset">Clear Filters</button>
+</form>
+
+<div id="Container" class="container">
+  <div class="owned mix preference trigger broad specific modest">Website</div>
+  <div class="owned mix preference trigger specific broad modest">Mobile App</div>
+  <div class="earned mix awareness preference specific broad modest">Facebook</div>
+   <div class="earned mix preference broad modest">Instagram</div>
+   <div class="earned mix awareness preference broad big">YouTube</div>
+
+    
+   <div class="shared mix awareness preference trigger broad specific big">Lloyds Branch</div>   
+    
+  <div class="paid mix awareness preference broad specific modest">SEO</div>
+  
+  
+  
+  <div class="gap"></div>
+  <div class="gap"></div>
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
